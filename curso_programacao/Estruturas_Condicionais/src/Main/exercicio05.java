@@ -27,6 +27,9 @@ public class exercicio05 {
 		
 		double total = valorUm * quantidade;
 		System.out.println("Total: R$ " + total);
+		
+		scanner.close();
 	}
+	
 
 }
