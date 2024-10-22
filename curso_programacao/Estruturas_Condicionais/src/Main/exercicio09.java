@@ -34,6 +34,7 @@ public class exercicio09 {
 			break;
 		} 
 		System.out.println(dia);
+		scanner.close();
 	}
 
 }
