@@ -14,7 +14,7 @@ public class Exercicio_05 {
 		
 		System.out.println("A medida em centimetros é: " + conversao);
 		
-
+		sc.close();
 	}
 
 }
