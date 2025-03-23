@@ -36,7 +36,7 @@ Scanner sc = new Scanner (System.in);
 		double sindicato = salarioBruto * 0.05;
 		System.out.println("Sindicato: R$" + sindicato);
 		
-		double salarioLiquido = salarioBruto- ir - inss - sindicato;
+		double salarioLiquido = salarioBruto - ir - inss - sindicato;
 		System.out.println("Salario Liquido: R$ " + salarioLiquido);
 		
 		sc.close();
