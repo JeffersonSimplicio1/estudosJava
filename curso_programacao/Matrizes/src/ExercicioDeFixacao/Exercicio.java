@@ -24,6 +24,12 @@ public class Exercicio {
                 mat[i][j] = sc.nextInt();
             }
         }
+        for(int i = 0; i< mat.length; i++){
+            for(int j =0; j< mat[i].length; j++) {
+                System.out.print(mat[i] [j] + " ");
+            }
+            System.out.println();
+        }
 
         System.out.print("Escreva um numero que você quer verificar na matriz: ");
         int x = sc.nextInt();
