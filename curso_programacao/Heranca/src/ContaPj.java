@@ -27,5 +27,11 @@ public class ContaPj extends Conta{
             /*Saldo é visivel nesta classe porque esta classificado com protected, caso estivesse como private o mesmo não
             seria visivel por esta classe*/
             }
+        
+    }
+    @Override
+    public void saque(double quantia){
+        super.saque (quantia);
+        saldo -= 2.0;
     }
 }

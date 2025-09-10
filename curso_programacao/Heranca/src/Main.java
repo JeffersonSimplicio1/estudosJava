@@ -29,13 +29,22 @@ public class Main {
 //                }
 //
 
-        Conta acc1 = new Conta(1001,"Alex", 1000.00);
-        acc1.saque(200.0);
-        System.out.println(acc1.getSaldo());
+//        Conta acc1 = new Conta(1001,"Alex", 1000.00);
+//        acc1.saque(200.0);
+//        System.out.println(acc1.getSaldo());
+//
+//        Conta acc2 = new ContaPoupanca(1002, "Regina", 1000.00,0.01);
+//        acc2.saque(200.00);
+//        System.out.println(acc2.getSaldo());
 
-        Conta acc2 = new ContaPoupanca(1002, "Regina", 1000.00,0.01);
-        acc2.saque(200.00);
-        System.out.println(acc2.getSaldo());
+        Conta x = new Conta(1020, "Alex", 1000.00);
+        Conta y = new ContaPoupanca(1023,"Maria", 1000.00,0.01);
+
+        x.saque(50.0);
+        y.saque(50.0);
+
+        System.out.println(x.getSaldo());
+        System.out.println(y.getSaldo());
 
 
 
