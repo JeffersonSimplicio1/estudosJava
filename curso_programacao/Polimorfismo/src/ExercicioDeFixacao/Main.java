@@ -1,5 +1,8 @@
 package ExercicioDeFixacao;
 
+import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -19,14 +22,18 @@ public class Main {
         System.out.print("Common, used or imported (c/u/i) ? ");
         char ch = sc.next().charAt(0);
         System.out.print("Name: ");
-        String name = sc.nextLine();
         sc.nextLine();
+        String name = sc.nextLine();
         System.out.print("Price: ");
         Double price = sc.nextDouble();
 
         if(ch == 'c'){
             Product prod = new Product(name, price);
             list.add(prod);
+        } else if(ch == 'u'){
+            System.out.println("Manufature date: (DD/MM/YYYY)");
+            LocalDate date = LocalDate.parse(sc.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+            list.add(new UsedProduct(name, price, date));
         } else if (ch == 'i') {
             System.out.print("Customs fee: ");
             double customsFee = sc.nextDouble();
@@ -37,7 +44,7 @@ public class Main {
         System.out.println();
         System.out.println("PRICE TAGS: ");
         for(Product prod :  list){
-            System.out.println();
+            System.out.println(prod.priceTag());
         }
         sc.close();
       }

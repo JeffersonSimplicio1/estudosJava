@@ -1,31 +1,28 @@
 package ExercicioDeFixacao;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class UsedProduct extends Product{
-    private Date manufatureDate;
+    private LocalDate manufatureDate;
 
-    public UsedProduct(){
-        super();
-
-    }
-
-    public UsedProduct(String name, Double price, Date manufatureDate) {
+    public UsedProduct(String name, Double price, LocalDate manufatureDate) {
         super(name, price);
         this.manufatureDate = manufatureDate;
     }
 
-    public Date getManufatureDate() {
+    public LocalDate getManufatureDate() {
         return manufatureDate;
     }
 
-    public void setManufatureDate(Date manufatureDate) {
+    public void setManufatureDate(LocalDate manufatureDate) {
         this.manufatureDate = manufatureDate;
     }
-
     @Override
     public String priceTag(){
-        return getName() + " (used) $ " + getPrice() + "(Manufature date: " + getManufatureDate() + ")";
-
+        return getName() + " (used) $ " +
+                String.format("%.2f",getPrice()) +
+                " (Manufature date: " +
+                manufatureDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy") ) + ")";
     }
 }
