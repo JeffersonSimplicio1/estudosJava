@@ -53,7 +53,7 @@ public class Midia {
     }
     public void printDados(){
         String s = getTipo() + "\n" + getDetalhes() + "\n";
-        System.out.println(s);
+        System.out.println(s);      
     }
     public void inserirDados(){
         Scanner sc = new Scanner(System.in);
