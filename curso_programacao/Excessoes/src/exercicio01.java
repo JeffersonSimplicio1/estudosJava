@@ -18,6 +18,8 @@ public class exercicio01 {
 
         }
 
+        System.out.println("Fim do programa!");
+
         sc.close();
     }
 }
