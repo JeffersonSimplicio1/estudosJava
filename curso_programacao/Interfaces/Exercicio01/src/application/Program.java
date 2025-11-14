@@ -4,10 +4,7 @@ import model.entities.CarRental;
 import model.entities.Vehicle;
 import model.services.BrazilTaxService;
 import model.services.RentalService;
-import model.services.TaxService;
-import model.services.UsaTaxService;
 
-import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;

@@ -1,0 +1,18 @@
+Faça um programa que pergunte ao usuario qual a figura que ele quer calcular area, estando disponiveis para calculo a area do
+Circulo, Triangulo, quadrado, retangulo e trapezio. O programa deve calcular a area da figura selecionada e mostra ao usuario
+o valor da area com duas casas decimais após a virgula.
+
+OBS1: Ao selecionar a figura do circulo, o programa deve perguntar ao usuario se o mesmo dispoe do valor do raio ou do diametro
+do mesmo, podendo o usuario entrar com qualquer dos valores para iniciar o calculo. caso o usuario insira um valor invalido apre-
+sente uma mensagem de erro.
+
+OBS2: O programa deve ser feito com utilização de POO e implementação de uma classe abstrata informando a regra da existencia
+de um class area para todas as formas.
+
+Entrada
+Usuario digitara os valores com casas decimais.
+
+Saída
+
+O arquivo de saída deverá conter valores com apenas duas casas decimais. Se houver algum erro de entrada do usuario a saida devera
+apresentar mensagem informando que foi feita uma entrada com o valor errado.

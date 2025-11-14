@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbsEInterface/AbsEInterface.iml" filepath="$PROJECT_DIR$/AbsEInterface/AbsEInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Praticando01/Praticando01.iml" filepath="$PROJECT_DIR$/Praticando01/Praticando01.iml" />
       <module fileurl="file://$PROJECT_DIR$/praticando.iml" filepath="$PROJECT_DIR$/praticando.iml" />
     </modules>
   </component>
